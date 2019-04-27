@@ -41,6 +41,7 @@ start:
 section .data
 
 ; Define a label `msg` pointing to the byte literals inserted into the binary by `db`. 
+; `db` is a "pseduo-instruction": https://www.nasm.us/xdoc/2.11.02/html/nasmdoc3.html#section-3.2
 ; The `, 10` piece just concatenates ASCII value 10 (decimal) which corresponds to a newline.
 msg:    db      "Hello, world!", 10
 
